@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.navbarContainer{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.menu ul li{
+  padding-left: 7px;
+  padding-right: 7px;
+  display: inline-block;
+  }
