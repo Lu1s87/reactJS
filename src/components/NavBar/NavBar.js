@@ -1,10 +1,12 @@
-import logo from '../img/GamingSea.jpg';
+import logo from '../../img/GamingSea.jpg';
+import './NavBar.styles.css'
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavBar = () => {
     return (
         <div className="navbarContainer"> 
-            <img src={logo} alt="logo"/>
-            <nav class="menu">
+            <img className="logo" src={logo} alt="logo"/>
+            <nav className="menu">
                 <ul>
                     <li><a> Inicio </a></li>
 
@@ -12,7 +14,9 @@ const NavBar = () => {
                     
                     <li><a> Componentes </a></li>
         
-                    <li><a> Contacto </a></li>    
+                    <li><a> Contacto </a></li>
+
+                    <li> <CartWidget/> </li>    
                 </ul>
             </nav>
         </div>

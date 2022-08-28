@@ -1,0 +1,18 @@
+.navbarContainer{
+  position:absolute;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+}
+  
+.menu ul li{
+  padding-left: 7px;
+  padding-right: 7px;
+  display: inline-block;
+}
+
+.logo {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
