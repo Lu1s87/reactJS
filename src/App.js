@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import ItemListConteiner from './components/ItemListConteiner/ItemListConteiner';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemCount from './components/ItemCount/ItemCount';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <header className="App-header">
-      <ItemListConteiner greeting="Hola, bienvenido!"/>
+      <ItemListContainer greeting="Hola, bienvenido!"/>
       <ItemCount/>
       </header>
     </div>
