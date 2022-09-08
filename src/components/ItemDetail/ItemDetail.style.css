@@ -1,0 +1,13 @@
+.producto{
+    width: 300px;
+    height: 400px;
+    margin-top: 150px;
+    color: blue;
+    background-color: white;
+    font-size: 20px;
+}
+
+.imagenP{
+    margin-top: 50px;
+    width: 200px;
+}
