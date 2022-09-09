@@ -1,11 +1,16 @@
 import './ItemDetail.style.css';
 
-const ItemDetail = ({ detail }) => {
+const ItemDetail = ({ product }) => {
     return (
-        <div className="producto">            
-            <h2> {detail.title}</h2>
-            <img className="imagenP" src={detail.image} alt="title"/>
-            <h3> {detail.price} </h3>       
+        <div className="producto">  
+            <img className="imagenP" src={product.image} alt="title"/>          
+            <h2> {product.title}</h2>
+            <div>
+                <p>{product.description}</p>
+                <p>{product.category}</p>
+                <p>{product.price}</p> 
+            </div>
+                 
         </div>
     );
   };

@@ -1,6 +1,7 @@
 import data from "../mockData/mockData";
 import { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
+import './ItemListContainer.style.css'
 
 const ItemListContainer = () => {
     const [productList, setProductList] = useState ([]);
@@ -19,9 +20,9 @@ const ItemListContainer = () => {
         });
 
     return (
-        <>          
+        <div className="style">          
             <ItemList lista={productList} />
-        </> 
+        </div>
     );
 };
 

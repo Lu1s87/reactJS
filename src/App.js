@@ -4,17 +4,18 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemCount from './components/ItemCount/ItemCount';
 import ItemLDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
-  return (
-    <div className="App">
+  return (  
+    <BrowserRouter>
       <NavBar/>
-      <header className="App-header">
-      <ItemListContainer greeting="Hola, bienvenido!"/>
-      <ItemCount/>
-      <ItemLDetailContainer/>
-      </header>
-    </div>
+      <Routes>
+        <Route path='/' element={<ItemListContainer/>} />
+        <Route path='detail/:id' element={<ItemLDetailContainer/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

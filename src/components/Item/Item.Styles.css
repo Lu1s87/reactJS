@@ -1,10 +1,14 @@
 .productos{
+   text-align: center;
     width: 300px;
     height: 400px;
     margin-top: 150px;
     color: blue;
     background-color: white;
     font-size: 20px;
+    margin-right: 20px;
+    border-radius: 10px 10px 10px 10px;
+    
 }
 
 .imagen{
