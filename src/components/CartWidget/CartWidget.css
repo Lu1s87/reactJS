@@ -1,0 +1,31 @@
+/* CART */
+.cart {
+  position: relative;
+  cursor: pointer;
+  width: 54px;
+}
+
+/* CART: IMG */
+.cart__img {
+  height: 40px;
+}
+
+/* CART: COUNTER */
+.cart__counter {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  border-radius: 50px;
+  width: 22px;
+  height: 22px;
+  background-color: blue;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CART: COUNT */
+.cart__count {
+  font-size: 14px;
+}

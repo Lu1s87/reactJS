@@ -1,25 +1,34 @@
-import {useState} from "react";
-import './itemCount.style.css';
+import { useState } from "react";
+import "./ItemCount.css";
 
-const ItemCount = () => {
-        const stock = 10
-        const [items, setItems] = useState(0)
+const ItemCount = ({ initial, stock }) => {
+  const [items, setItem] = useState(initial);
 
-        const agregarCarrito = () => items < [stock] ? setItems(items + 1) : alert ("No hay más Stock disponible")
+  const decrease = () => {
+    if (!items <= 0) setItem(items - 1);
+  };
 
-        const sacarCarrito = () => items > 0 ? setItems(items-1) : alert ("No posees más items")
+  const increase = () => {
+    if (items < stock) setItem(items + 1);
+  };
 
-    return (
-    <div className="card">
-        <div>Stock {stock}</div>
-        <div>Carrito {items} </div>
-        <div className="botonera">
-            <button className="rest" onClick={sacarCarrito}>-</button>
-            <button className="add" onClick={agregarCarrito}>+</button>
-        </div>
-        
+  const onAdd = () => {
+    if (items === 1) alert(`You added ${items} product!`);
+    if (items > 1) alert(`You added ${items} products!`);
+  };
+
+  return (
+    <div className="counter">
+      <div className="counter__container">
+        <i className="counter__decrease fa-solid fa-circle-minus" onClick={decrease}>-</i>
+        <p className="counter__count">{items}</p>
+        <i className="counter__increase fa-solid fa-circle-plus" onClick={increase}>+</i>
+      </div>
+      <button className="product__button" onClick={onAdd}>
+        Comprar
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default ItemCount
+export default ItemCount;

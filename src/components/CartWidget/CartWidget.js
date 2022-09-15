@@ -1,11 +1,15 @@
-import carrito from '../../img/carrito.png';
+import "./CartWidget.css";
+import cart from "../../assets/images/cart.png";
 
 const CartWidget = () => {
-    return (
-        <> 
-            <img className='carrito' src={carrito} alt="carrito"/>          
-        </>
-    )
-}
+  return (
+    <div className="cart">
+      <img src={cart} className="cart__img" alt="Pizza Cart" />
+      <div className="cart__counter">
+        <p className="cart__count">0</p>
+      </div>
+    </div>
+  );
+};
 
 export default CartWidget;

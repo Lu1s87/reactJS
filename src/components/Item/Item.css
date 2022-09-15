@@ -1,0 +1,111 @@
+/* PRODUCT */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/* PRODUCT: FIGURE */
+.product__figure {
+  position: relative;
+  max-width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 0;
+}
+
+/* PRODUCT: IMG */
+.product__img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/* PRODUCT: BODY */
+.product__body {
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #3e3e3e;
+  padding: 20px;
+  width: 100%;
+}
+
+/* PRODUCT: TITLE */
+.product__title {
+  font-weight: bold;
+}
+
+/* PRODUCT: INGREDIENTS */
+.product__ingredients {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "ingredient--1 ingredient--2"
+    "ingredient--3 ingredient--4";
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+/* PRODUCT: INGREDIENT */
+.product__ingredient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.product__ingredient--1 {
+  grid-area: ingredient--1;
+}
+
+.product__ingredient--2 {
+  grid-area: ingredient--2;
+}
+
+.product__ingredient--3 {
+  grid-area: ingredient--3;
+}
+
+.product__ingredient--4 {
+  grid-area: ingredient--4;
+}
+
+/* PRODUCT: PRICE */
+.product__price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  color: #0078ae;
+}
+
+/* PRODUCT: FOOTER */
+.product__footer {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* PRODUCT: BUTTON */
+.product__button {
+  border: none;
+  background-color: #d31837;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 15px 0;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.product__button:hover {
+  background-color: #be1632;
+}

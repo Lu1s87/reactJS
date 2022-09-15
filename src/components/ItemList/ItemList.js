@@ -1,23 +1,23 @@
-import Item from '../Item/Item';
-import {Link} from 'react-router-dom';
-import './ItemList.css' 
+import { NavLink } from "react-router-dom";
+import Item from "../Item/Item";
+import "./ItemList.css";
 
-const ItemList = ({lista}) => {
-    
-    return(
-        <div className='lista'>
-            {lista.map((product) => (
-                <Link keys={product.id} to={'/detail/' + product.id} style={{ textDecoration:'none'}}>
-                    <Item 
-                        title={product.title} 
-                        price={product.price} 
-                        image={product.image}
-                    />
-                </Link>
-            ))}
-            
-        </div>
-    )
+const ItemList = ({ list }) => {
+  return (
+    <div className="products__container">
+      {list.map((product) => (
+        <NavLink to={"/details/" + product.id} key={product.id} style={{ textDecoration: "none" }}>
+          <Item
+            img={product.img}
+            title={product.title}
+            ingredients={product.ingredients}
+            price={product.price}
+            category={product.category}
+          />
+        </NavLink>
+      ))}
+    </div>
+  );
 };
 
 export default ItemList;
