@@ -42,6 +42,7 @@ const data = [
     img: "https://cdn1.expertreviews.co.uk/sites/expertreviews/files/sandisk_extreme_pro_ssd.jpg",
     title: "SanDisk Extreme PRO",
     description: "Considerado un dispositivo de alto rendimiento, la unidad en estado sólido A400 de Kingston está diseñada para las personas más exigentes. Mejora de forma notable la capacidad de respuesta de su sistema, ya que alcanza velocidades de lectura/escritura de hasta 500MB/seg y 450MB/seg. Por ende, es 10 veces más rápido que un disco duro tradicional",
+    price: 100,
     stock: 10,
   },
   {

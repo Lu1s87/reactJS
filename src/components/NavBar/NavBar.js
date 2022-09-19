@@ -11,7 +11,9 @@ const NavBar = () => {
           <NavLink to={"/"}>
             <img src={logo} className="menu__logo" alt="Gaming" />
           </NavLink>
-          <CartWidget />
+          <NavLink to={"/cart"}>
+            <CartWidget/>
+        </NavLink>
         </div>
       </div>
       <nav className="nav">

@@ -1,6 +1,6 @@
 import "./Item.css";
 
-const Item = ({ id, img, title, price }) => {
+const Item = ({ id, img, title, price, }) => {
   return (
     <div className="product">
       <div className="product__header">
