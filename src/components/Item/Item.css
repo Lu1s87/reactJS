@@ -60,22 +60,6 @@
   width: fit-content;
 }
 
-.product__ingredient--1 {
-  grid-area: ingredient--1;
-}
-
-.product__ingredient--2 {
-  grid-area: ingredient--2;
-}
-
-.product__ingredient--3 {
-  grid-area: ingredient--3;
-}
-
-.product__ingredient--4 {
-  grid-area: ingredient--4;
-}
-
 /* PRODUCT: PRICE */
 .product__price {
   text-align: center;

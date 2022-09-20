@@ -3,12 +3,12 @@ import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./pages/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./pages/ItemDetailContainer/ItemDetailContainer";
 import "./App.css";
-import { CartContext } from "./context/CartContext";
+import { CartProvider } from "./context/CartProvider";
 import Cart from "./components/Cart/Cart"
 
 function App() {
   return (
-    <CartContext.Provider value={[]}>
+    <CartProvider>
         <BrowserRouter>
           <NavBar />
           <Routes>
@@ -18,7 +18,7 @@ function App() {
           <Route path='cart' element={<Cart />} />
         </Routes>
       </BrowserRouter>
-    </CartContext.Provider>
+    </CartProvider>
     
   );
 }
