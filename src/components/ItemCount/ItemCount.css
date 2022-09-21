@@ -1,4 +1,4 @@
-/* COUNTER */
+
 .counter {
   display: flex;
   flex-direction: column;
@@ -8,7 +8,6 @@
   width: 100%;
 }
 
-/* COUNTER: CONTAINER */
 .counter__container {
   display: flex;
   align-items: center;
@@ -17,14 +16,12 @@
   color: #3e3e3e;
 }
 
-/* COUNTER: COUNT */
 .counter__count {
   font-weight: bold;
   width: 24px;
   text-align: center;
 }
 
-/* COUNTER: DECREASE & INCREASE */
 .counter__decrease,
 .counter__increase {
   cursor: pointer;
@@ -32,7 +29,6 @@
   color: blue;
 }
 
-/* PRODUCT: BUTTON */
 .product__button {
   border: none;
   background-color: blue;

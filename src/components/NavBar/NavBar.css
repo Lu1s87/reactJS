@@ -1,11 +1,9 @@
-/* HEADER */
 .header {
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
-/* MENU */
 .menu {
   background-color: #ffffff;
   display: flex;
@@ -13,7 +11,6 @@
   justify-content: center;
 }
 
-/* MENU: CONTAINER */
 .menu__container {
   width: 1200px;
   height: 60px;
@@ -29,12 +26,10 @@
   }
 }
 
-/* MENU: LOGO */
 .menu__logo {
   height: 50px;
 }
 
-/* NAV */
 .nav {
   background-color: #1310d4;
   display: flex;
@@ -42,7 +37,6 @@
   justify-content: center;
 }
 
-/* NAV: UL */
 .nav__ul {
   width: 1200px;
   height: 60px;

@@ -1,12 +1,15 @@
 import "./CartWidget.css";
-import cart from "../../assets/images/cart.png";
+import cartLogo from "../../assets/images/cartLogo.png";
+import { CartContext } from "../../context/CartContext";
+import { useContext } from "react";
 
 const CartWidget = () => {
+  const {cart } = useContext(CartContext);
   return (
     <div className="cart">
-      <img src={cart} className="cart__img" alt="Pizza Cart" />
+      <img src={cartLogo} className="cart__img" alt="Cartlogo" />
       <div className="cart__counter">
-        <p className="cart__count">0</p>
+        <p className="cart__count">{cart.length}</p>
       </div>
     </div>
   );

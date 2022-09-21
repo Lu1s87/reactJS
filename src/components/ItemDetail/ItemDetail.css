@@ -91,3 +91,16 @@
 .detail__description {
   max-width: 560px;
 }
+
+.boton {
+  border: none;
+  background-color: #1310d4;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 15px 0;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: 0.3s;
+}
