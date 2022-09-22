@@ -4,7 +4,7 @@ import { CartContext } from '../../context/CartContext';
 import './Cart.css'
 
 const Cart = () => {
-    const {cart, removeItem } = useContext(CartContext); 
+    const {cart, removeItem, cartTotal } = useContext(CartContext); 
     console.log ('cart', cart );
     return (
     <div className="tarjeta">
@@ -28,6 +28,7 @@ const Cart = () => {
                 </div>
                     
                 ))}
+                    <span>Total a pagar : ${cartTotal()}</span>
                     <button className="productoBoton">Terminar compra</button>
                 </>
                 
