@@ -15,6 +15,11 @@ export const CartProvider = ({children}) => {
     const isInCart = (id) => {
         return cart.some((item) => item.id === id);
     };
+
+    const clear = () => {
+        setCart([]);
+    };
+
     const removeItem = (productId) => {
         let newarray = [];
          cart.forEach((product) => {
@@ -34,7 +39,7 @@ export const CartProvider = ({children}) => {
 
 
     return (
-        <CartContext.Provider value={{cart, addToCart, removeItem, cartTotal}}>
+        <CartContext.Provider value={{cart, addToCart, removeItem, cartTotal, clear}}>
             {children}
         </CartContext.Provider>
     );

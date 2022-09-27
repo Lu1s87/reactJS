@@ -16,7 +16,7 @@ const ItemDetail = ({ item }) => {
     <div className="detail">
       <div className="detail__header">
         <figure className="detail__figure">
-          <img src={item.img} alt={item.title} className="detail__img" />
+          <img src={item.image} alt={item.title} className="detail__img" />
         </figure>
       </div>
       <div className="detail__body">

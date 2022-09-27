@@ -8,9 +8,8 @@ const ItemList = ({ list }) => {
       {list.map((product) => (
         <NavLink to={"/details/" + product.id} key={product.id} style={{ textDecoration: "none" }}>
           <Item
-            img={product.img}
+            img={product.image}
             title={product.title}
-            ingredients={product.ingredients}
             price={product.price}
             category={product.category}
           />
