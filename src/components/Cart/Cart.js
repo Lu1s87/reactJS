@@ -13,9 +13,9 @@ const Cart = () => {
         const db = getFirestore();
         const order = {
             buyer:{
-                name: '',
-                phone: '',
-                email: '',
+                name: 'test',
+                phone: '54223123456',
+                email: 'test@test',
             },
             items: cart,
             total: cartTotal(), 
