@@ -6,6 +6,10 @@ This project was developed for the ReactJs course on the CoderHouse platform
 
 > Ledesma Luis Contact:  [ledesmaluis87@outlook.com](mailto:ledesmaluis87@outlook.com)
 
+### Demo
+
+![Demo de una compra](https://youtu.be/S9rYIToz7uM)
+
 ### Main libraries used in the project
 
 library used:
