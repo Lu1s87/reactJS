@@ -2,10 +2,35 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from '../../context/CartContext';
 import './Cart.css'
+import moment from 'moment';
+import { collection, addDoc, getFirestore } from 'firebase/firestore';
 
 const Cart = () => {
     const {cart, removeItem, cartTotal, clear } = useContext(CartContext); 
     console.log ('cart', cart );
+
+    const createOrder = () => {
+        const db = getFirestore();
+        const order = {
+            buyer:{
+                name: '',
+                phone: '',
+                email: '',
+            },
+            items: cart,
+            total: cartTotal(), 
+            date: moment().format(),
+        };
+        const query = collection(db, 'orders');
+        addDoc(query, order)
+            .then(({ id }) => {
+                console.log (id);
+                alert('Gracias por comprar con nosotros, tu orden tiene el id: '+ id );
+            })
+            .catch(() => 
+            alert('Tu compra no pudo finalizar correctamente, intentalo de nuevo mas tarde.') )
+    };
+
     return (
     <div className="tarjeta">
         <h1 className="title">Tu carrito:</h1>
@@ -30,7 +55,7 @@ const Cart = () => {
                 ))}
                     <span>Total a pagar : ${cartTotal()}</span>
                     <Link to={'/'} className="seguirLink"><button className="seguir"> Seguir comprando </button></Link>
-                    <button className="productoBoton">Terminar compra</button>
+                    <button className="productoBoton" onClick={createOrder}>Terminar compra</button>
                     <button className="vaciarBoton" onClick={() => clear()}>Vaciar carrito</button>
                 </>
                 
